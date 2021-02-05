@@ -22,6 +22,6 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: build
+        FOLDER: docs/.vuepress/dist
 
 # 9082de34ebd3347e9566ce87f5449982d4d7faa1
