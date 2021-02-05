@@ -1,0 +1,8 @@
+# node modules
+node_modules
+
+# MacOS desktop services store
+.DS_Store
+
+# Log files
+*.log
