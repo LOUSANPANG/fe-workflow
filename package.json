@@ -1,5 +1,5 @@
 {
-  "homepage": "https://lousanpang.github.io/fe-workflow",
+  "homepage": "https://lousanpang.github.io/fe-workflow/",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
