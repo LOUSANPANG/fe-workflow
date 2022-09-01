@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "homepage": "https://lousanpang.github.io/fe-workflow",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
