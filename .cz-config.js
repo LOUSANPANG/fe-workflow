@@ -10,11 +10,11 @@ module.exports = {
     { value: 'test', name: 'test: 添加、修改测试用例' },
     {
       value: 'build',
-      name: 'build: 构建流程、外部依赖变更（如升级 npm 包、修改 webpack 配置等）'
+      name: 'build: 构建流程、外部依赖变更（如升级 npm 包、修改 webpack 配置等）',
     },
     { value: 'ci', name: 'ci: 修改 CI 配置、脚本' },
     { value: 'chore', name: 'chore: 对构建过程或辅助工具和库的更改（不影响源文件、测试用例）' },
-    { value: 'revert', name: 'revert: 回滚 commit' }
+    { value: 'revert', name: 'revert: 回滚 commit' },
   ],
 
   // scope 类型（定义之后，可通过上下键选择）
@@ -24,14 +24,15 @@ module.exports = {
     ['utils', 'utils 相关'],
     ['styles', '样式相关'],
     ['deps', '项目依赖'],
+    ['md', '文档相关'],
     ['other', '其他修改'],
     // 如果选择 custom，后面会让你再输入一个自定义的 scope。也可以不设置此项，把后面的 allowCustomScopes 设置为 true
-    ['custom', '以上都不是？我要自定义']
+    ['custom', '以上都不是？我要自定义'],
   ].map(([value, description]) => {
     return {
       value,
-      name: `${value.padEnd(30)} (${description})`
-    }
+      name: `${value.padEnd(30)} (${description})`,
+    };
   }),
 
   // 是否允许自定义填写 scope，在 scope 选择的时候，会有 empty 和 custom 可以选择。
@@ -64,7 +65,7 @@ module.exports = {
     body: '填写更加详细的变更描述（可选）。使用 "|" 换行：\n',
     breaking: '列举非兼容性重大的变更（可选）：\n',
     footer: '列举出所有变更的 ISSUES CLOSED（可选）。 例如: #31, #34：\n',
-    confirmCommit: '确认提交？'
+    confirmCommit: '确认提交？',
   },
 
   // 设置只有 type 选择了 feat 或 fix，才询问 breaking message
@@ -75,7 +76,7 @@ module.exports = {
 
   // subject 限制长度
   subjectLimit: 100,
-  breaklineChar: '|' // 支持 body 和 footer
+  breaklineChar: '|', // 支持 body 和 footer
   // footerPrefix : 'ISSUES CLOSED:'
   // askForBreakingChangeFirst : true,
-}
+};
