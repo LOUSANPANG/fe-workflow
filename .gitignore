@@ -1,0 +1,24 @@
+node_modules
+.DS_Store
+.nuxt
+.nitro
+.cache
+.output
+.npmrc
+.cache
+
+dist
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

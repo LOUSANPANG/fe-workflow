@@ -1,0 +1,6 @@
+{
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "commentTranslate.targetLanguage": "zh-CN"
+}
