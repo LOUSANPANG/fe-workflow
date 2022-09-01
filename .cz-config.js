@@ -24,6 +24,7 @@ module.exports = {
     ['utils', 'utils 相关'],
     ['styles', '样式相关'],
     ['deps', '项目依赖'],
+    ['workflows', '部署相关'],
     ['md', '文档相关'],
     ['other', '其他修改'],
     // 如果选择 custom，后面会让你再输入一个自定义的 scope。也可以不设置此项，把后面的 allowCustomScopes 设置为 true
