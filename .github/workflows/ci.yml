@@ -26,4 +26,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.FEWORKFLOW }}
           BRANCH: gh-pages
-          FOLDER: .output/public
+          FOLDER: dist
