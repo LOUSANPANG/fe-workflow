@@ -7,6 +7,6 @@ export default defineNuxtConfig({
   },
 
   router: {
-    base: './',
+    base: '/fe-workflow',
   },
 });
