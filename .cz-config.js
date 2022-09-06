@@ -33,7 +33,7 @@ module.exports = {
     return {
       value,
       name: `${value.padEnd(30)} (${description})`,
-    };
+    }
   }),
 
   // 是否允许自定义填写 scope，在 scope 选择的时候，会有 empty 和 custom 可以选择。
@@ -80,4 +80,4 @@ module.exports = {
   breaklineChar: '|', // 支持 body 和 footer
   // footerPrefix : 'ISSUES CLOSED:'
   // askForBreakingChangeFirst : true,
-};
+}
