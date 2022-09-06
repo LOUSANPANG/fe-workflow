@@ -1,19 +1,15 @@
 node_modules
+dist
 .DS_Store
-.nuxt
 .nitro
 .cache
-.output
 .npmrc
 .cache
-
-dist
+.nuxt
+.output
 
 # Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+*.log
 
 # Editor directories and files
 .idea
