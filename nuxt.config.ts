@@ -5,4 +5,14 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? './' : '',
   },
+
+  modules: ['@nuxt/content'],
+
+  content: {
+    // https://content.nuxtjs.org/api/configuration
+  },
+
+  typescript: {
+    shim: false,
+  },
 });
