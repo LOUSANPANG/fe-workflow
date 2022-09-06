@@ -8,8 +8,17 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/content'],
 
-  content: {
-    // https://content.nuxtjs.org/api/configuration
+  css: ['~/assets/css/tailwind.css'],
+
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
   },
 
   typescript: {
