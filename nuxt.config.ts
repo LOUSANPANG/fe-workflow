@@ -1,9 +1,9 @@
-import { defineNuxtConfig } from 'nuxt';
+import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? './' : '',
+    baseURL: process.env.NODE_ENV === 'production' ? '/fe-workflow' : '',
   },
 
   modules: ['@nuxt/content'],
@@ -15,4 +15,4 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
-});
+})
