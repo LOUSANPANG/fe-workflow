@@ -4,13 +4,13 @@
 ### ESlint、[Prettier](https://prettier.io/docs/en/options.html)
 
 ```
-yarn add -D eslint
+pnpm add -D eslint
 
 npx eslint --init
 ```
 
 ```
-yarn add -D prettier
+pnpm add -D prettier
 
 echo {}> .prettierrc
 ```
@@ -18,7 +18,7 @@ echo {}> .prettierrc
 ```
 <!-- 解决冲突 -->
 
-yarn add -D eslint-plugin-prettier eslint-config-prettier
+pnpm add -D eslint-plugin-prettier eslint-config-prettier
 
 <!-- .eslintrc.js -->
 module.exports = {
@@ -32,18 +32,29 @@ module.exports = {
 }
 ```
 
+```
+<!-- 解决 Nuxt 全局变量的问题 -->
+
+pnpm add -D eslint-plugin-nuxt
+
+extends: [
+  - 'eslint:recommended',
+  + 'plugin:nuxt/recommended',
+]
+```
+
 
 ### stylelint
 
 ```
-yarn add -D stylelint stylelint-config-standard
+pnpm add -D stylelint stylelint-config-standard
 
 echo {}> .stylelintrc.json
 ```
 
 ```
 <!-- 解决与prettier配置的冲突 -->
-yarn add -D stylelint-config-prettier
+pnpm add -D stylelint-config-prettier
 
 <!-- .stylelintrc.json -->
 {
@@ -55,11 +66,11 @@ yarn add -D stylelint-config-prettier
 ### [husky](https://github.com/typicode/husky)、[lint-staged](https://github.com/okonet/lint-staged)
 
 ```
-npx husky-init && yarn
+npx husky-init && pnpm
 ```
 
 ```
-yarn add -D lint-staged
+pnpm add -D lint-staged
 
 <!-- package.json -->
 "lint-staged": {
@@ -73,7 +84,7 @@ npx lint-staged
 
 ### Commitizen、Commitlint
 ```
-yarn add -D commitizen
+pnpm add -D commitizen
 
 <!-- cz-conventional-changelog 适配器来初始化项目 -->
 npx commitizen init cz-conventional-changelog --save-dev --save-exact --force
@@ -83,7 +94,7 @@ npx commitizen init cz-customizable --save-dev --save-exact --force
 ```
 
 ```
-yarn add -D @commitlint/config-conventional @commitlint/cli
+pnpm add -D @commitlint/config-conventional @commitlint/cli
 
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 

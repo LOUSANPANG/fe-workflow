@@ -11,6 +11,7 @@ specifiers:
   cz-customizable: ^6.9.2
   eslint: ^8.23.0
   eslint-config-prettier: ^8.5.0
+  eslint-plugin-nuxt: ^4.0.0
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-vue: ^9.4.0
   husky: ^8.0.0
@@ -29,6 +30,7 @@ devDependencies:
   cz-customizable: 6.9.2
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0_eslint@8.23.0
+  eslint-plugin-nuxt: 4.0.0_eslint@8.23.0
   eslint-plugin-prettier: 4.2.1_tgumt6uwl2md3n6uqnggd6wvce
   eslint-plugin-vue: 9.4.0_eslint@8.23.0
   husky: 8.0.1
@@ -3123,6 +3125,17 @@ packages:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.23.0
+    dev: true
+
+  /eslint-plugin-nuxt/4.0.0_eslint@8.23.0:
+    resolution: {integrity: sha512-v3Vwdk8YKe52bAz8eSIDqQuTtfL/T1r9dSl1uhC5SyR5pgLxgKkQdxXVf/Bf6Ax7uyd9rHqiAuYVdqqDb7ILdA==}
+    dependencies:
+      eslint-plugin-vue: 9.4.0_eslint@8.23.0
+      semver: 7.3.7
+      vue-eslint-parser: 9.0.3_eslint@8.23.0
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
     dev: true
 
   /eslint-plugin-prettier/4.2.1_tgumt6uwl2md3n6uqnggd6wvce:
