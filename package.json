@@ -2,7 +2,7 @@
   "homepage": "https://lousanpang.github.io/fe-workflow",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "TAILWIND_MODE=watch nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -34,7 +34,7 @@
     "eslint-plugin-vue": "^9.4.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
-    "nuxt": "3.0.0-rc.8",
+    "nuxt": "v3.0.0-rc.9",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8"
