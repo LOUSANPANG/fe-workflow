@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3637207 */
+  src: url('../fonts/iconfont/iconfont.eot?t=1662601888304'); /* IE9 */
+  src: url('../fonts/iconfont/iconfont.eot?t=1662601888304#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/iconfont/iconfont.woff2?t=1662601888304') format('woff2'),
+       url('../fonts/iconfont/iconfont.woff?t=1662601888304') format('woff'),
+       url('../fonts/iconfont/iconfont.ttf?t=1662601888304') format('truetype'),
+       url('../fonts/iconfont/iconfont.svg?t=1662601888304#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github-fill:before {
+  content: "\e885";
+}
+
