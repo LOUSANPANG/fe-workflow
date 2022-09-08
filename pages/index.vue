@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative pt-24">
     <nav class="w-screen px-16 fixed left-0 top-6 flex justify-end text-slate-600 text-sm">
       <ul class="flex items-center space-x-8">
         <li v-for="item in navList" :key="item.title">
@@ -13,7 +13,23 @@
         </a>
       </div>
     </nav>
-    <!-- <div class="absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 beams"> </div> -->
+
+    <div class="beams bg-top bg-no-repeat">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="pt-8 text-slate-900 text-4xl tracking-tight text-center">
+          FE Engineering Construction Guide Refspec.
+        </h1>
+        <p class="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto">
+          This operation manual including
+          <code class="font-mono font-medium text-sky-500">cli install</code>,
+          <code class="font-mono font-medium text-sky-500">specification</code>,
+          <code class="font-mono font-medium text-sky-500">testing</code>,
+          <code class="font-mono font-medium text-sky-500">optimization</code>,
+          <code class="font-mono font-medium text-sky-500">deploy</code>. can be applied to your
+          system design.
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
