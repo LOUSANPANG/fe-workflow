@@ -1,7 +1,7 @@
 <template>
   <div class="w-screen px-16 fixed left-0 top-6">
     <nav class="flex justify-end text-slate-600 text-sm">
-      <ul class="flex items-center space-x-8">
+      <ul class="flex items-center space-x-8 my-0">
         <li v-for="item in navList" :key="item.title">
           <a class="hover:text-sky-500" :href="item.href">{{ item.title }}</a>
         </li>

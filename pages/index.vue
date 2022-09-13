@@ -1,7 +1,6 @@
 <template>
   <div class="relative pt-24">
     <div class="beams bg-no-repeat">
-      <!-- introduce -->
       <div class="max-w-5xl mx-auto mb-24">
         <h1 class="pt-8 text-slate-900 text-4xl tracking-tight text-center">
           FE Engineering Construction Guide Refspec.
@@ -17,11 +16,24 @@
         </p>
       </div>
 
-      <!-- demo -->
       <div class="max-w-7xl mx-auto px-4 lg:grid lg:grid-cols-12 lg:gap-8 pb-24">
         <!-- step -->
         <div class="lg:col-span-5 xl:col-span-6">
-          <div class="bg-white ring-1 ring-slate-900/5 rounded-lg shadow-xl px-6 py-5 my-auto">
+          <div class="bg-white ring-1 ring-slate-900/5 rounded-lg shadow-xl px-6 py-6 my-auto">
+            <div class="relative flex items-center mb-8">
+              <span
+                class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-rose-400 opacity-75"
+              ></span>
+              <span class="ml-6 text-rose-400">前端工程化搭建指南</span>
+            </div>
+            <a-timeline>
+              <a-timeline-item
+                class="text-slate-600"
+                v-for="(item, index) in timelineContent"
+                :key="index"
+                >{{ item }}</a-timeline-item
+              >
+            </a-timeline>
           </div>
         </div>
         <!-- terminal -->
@@ -35,11 +47,17 @@
             <div
               v-for="(item, index) in codeContent"
               :key="index"
-              :class="['flex', 'pl-4', 'mb-6', 'u-code', `w-[${item.length / 2 + 4}rem]`]"
-              :style="{ 'animation-delay': `${3 * index}s` }"
+              class="flex pl-4 mb-6 u-code"
+              :style="{
+                'animation-delay': `${3 * index}s`,
+                width: `${item.join('').length / 2 + 4}rem`,
+              }"
             >
               <div class="text-slate-600 pr-4">{{ index + 1 }}</div>
-              <div class="text-slate-50">{{ item }}</div>
+              <div class="text-slate-50">
+                <span>{{ item[0] }}</span>
+                <span class="text-sky-300">{{ item[1] }}</span>
+              </div>
             </div>
           </code>
         </div>
@@ -49,15 +67,36 @@
 </template>
 
 <script setup lang="ts">
-  const codeContent = [
-    'Create init my-app (react vue uniapp package)',
-    'Specification project directory (codelint commitlint)',
-    'Code development specification (components view store router)',
-    'Integration testing (jest vitest)',
-    'Performance optimization (vite webpack rollup)',
-    'Deploy (Docker CI Git Action)',
-    'Log analysis (DataAnalysis BugReport)',
+  const timelineText = [
+    '初始化项目脚手架（create init myApp）',
+    '规范项目目录（component pages store router static ...）',
+    '编码规范（eslint prettier stylelint commitlint vscode.setting）',
+    '集成测试（jest vitest）',
+    '性能优化（vite webpack rollup）',
+    '部署（Docker CI Action）',
+    '数据分析（数据分析 错误上报）',
   ]
+  const timelineContent = ref([])
+
+  const codeContent = [
+    ['Create init my-app ', '(react vue uniapp package)'],
+    ['Specification project directory ', '(components view store router)'],
+    ['Code development specification ', '(codelint commitlint)'],
+    ['Integration testing ', '(jest vitest)'],
+    ['Performance optimization ', '(vite webpack rollup)'],
+    ['Deploy ', '(Docker CI Git Action)'],
+    ['Log analysis ', '(DataAnalysis BugReport)'],
+  ]
+
+  onMounted(() => {
+    timelineText.forEach((item, index) => {
+      ;((item, index) => {
+        setTimeout(() => {
+          timelineContent.value.push(item)
+        }, 3000 * index)
+      })(item, index)
+    })
+  })
 </script>
 
 <style>
