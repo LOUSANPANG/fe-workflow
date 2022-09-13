@@ -38,5 +38,8 @@
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "ant-design-vue": "^3.2.12"
   }
 }

@@ -17,6 +17,8 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/tailwind.css', '~/assets/css/iconfont.css'],
 
+  plugins: ['~/plugins/ant.client.ts'],
+
   build: {
     postcss: {
       postcssOptions: {
@@ -26,9 +28,5 @@ export default defineNuxtConfig({
         },
       },
     },
-  },
-
-  typescript: {
-    shim: false,
   },
 })
