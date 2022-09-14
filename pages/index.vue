@@ -16,10 +16,12 @@
         </p>
       </div>
 
-      <div class="max-w-7xl mx-auto px-4 lg:grid lg:grid-cols-12 lg:gap-8 pb-24">
+      <div class="max-w-7xl mx-auto px-4 pb-24 lg:flex lg:items-center">
         <!-- step -->
-        <div class="lg:col-span-5 xl:col-span-6">
-          <div class="bg-white ring-1 ring-slate-900/5 rounded-lg shadow-xl px-6 py-6 my-auto">
+        <div class="lg:3/8 lg:mr-6 w-full mb-6 lg:mb-0">
+          <div
+            class="lg:h-[25rem] h-[28rem] bg-white ring-1 ring-slate-900/5 rounded-lg shadow-xl px-6 pt-6"
+          >
             <div class="relative flex items-center mb-8">
               <span
                 class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-rose-400 opacity-75"
@@ -37,13 +39,15 @@
           </div>
         </div>
         <!-- terminal -->
-        <div class="lg:col-span-7 xl:col-span-6 h-[30rem] shadow-xl bg-slate-800 rounded-xl">
+        <div
+          class="lg:4/8 w-full lg:h-[30rem] h-[28rem] overflow-auto shadow-xl bg-slate-800 rounded-xl"
+        >
           <div class="border-b border-slate-500/30">
             <div class="flex items-center h-8 space-x-1.5 px-3">
               <div v-for="i in 3" :key="i" class="w-2.5 h-2.5 bg-slate-600 rounded-full"></div>
             </div>
           </div>
-          <code class="overflow-auto text-sm text-slate-50 p-4">
+          <code class="text-sm text-slate-50 p-4">
             <div
               v-for="(item, index) in codeContent"
               :key="index"
