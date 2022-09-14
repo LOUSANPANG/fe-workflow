@@ -1,0 +1,1 @@
+import{_ as t}from"./TheHeader.vue_vue_type_script_setup_true_lang.c63c5c6e.js";import{J as a,o as r,E as n,N as s,K as c,F as _}from"./entry.dcd69631.js";const f={};function l(e,m){const o=t;return r(),n(_,null,[s(o),c(e.$slots,"default")],64)}const u=a(f,[["render",l]]);export{u as default};
