@@ -1,16 +1,18 @@
 <template>
-  <div class="w-screen px-16 fixed left-0 top-6">
+  <div class="w-screen px-16 pt-6 fixed z-10 left-0 top-0 bg-white">
     <nav class="flex justify-end text-slate-600 text-sm">
       <ul class="flex items-center space-x-8 my-0">
-        <li v-for="item in navList" :key="item.title">
-          <a class="hover:text-sky-500" :href="item.href">{{ item.title }}</a>
+        <li v-for="item in navList" :key="item.name">
+          <NuxtLink class="hover:text-sky-500" :to="item.path" :target="item.target">{{
+            item.name
+          }}</NuxtLink>
         </li>
       </ul>
 
       <div class="flex items-center border-l border-slate-200 ml-6 pl-6">
-        <a class="block hover:text-slate-500" :href="githubUrl">
+        <NuxtLink class="block hover:text-slate-500" :to="githubPath" target="_blank">
           <i class="iconfont icon-github-fill !text-lg" />
-        </a>
+        </NuxtLink>
       </div>
     </nav>
   </div>
@@ -18,9 +20,8 @@
 
 <script setup lang="ts">
   const navList = [
-    { title: 'Home', href: 'https://lousanpang.github.io/fe-workflow' },
-    { title: 'Docs', href: '' },
-    { title: 'Blog', href: 'https://lousanpang.github.io/' },
+    { name: 'Docs', path: '/docs', target: '' },
+    { name: 'Blog', path: 'https://lousanpang.github.io/', target: '_blank' },
   ]
-  const githubUrl = 'https://github.com/LOUSANPANG/fe-workflow'
+  const githubPath = 'https://github.com/LOUSANPANG/fe-workflow'
 </script>
