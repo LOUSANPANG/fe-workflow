@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: isPro ? '/fe-workflow' : '',
     head: {
-      link: [{ rel: 'shortcut icon', href: '/favicon.ico' }],
+      link: [{ rel: 'shortcut icon', href: '/fe-workflow/favicon.ico' }],
       script: [isDev && { src: 'https://cdn.tailwindcss.com' }],
     },
   },
