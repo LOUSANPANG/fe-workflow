@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen px-16 pt-6 fixed z-10 left-0 top-0 bg-white">
+  <div class="w-screen px-16 py-6 fixed z-10 left-0 top-0 bg-white/[.9]">
     <nav class="flex justify-end text-slate-600 text-sm">
       <ul class="flex items-center space-x-8 my-0">
         <li v-for="item in navList" :key="item.name">
@@ -19,9 +19,6 @@
 </template>
 
 <script setup lang="ts">
-  const navList = [
-    { name: 'Docs', path: '/docs', target: '' },
-    { name: 'Blog', path: 'https://lousanpang.github.io/', target: '_blank' },
-  ]
-  const githubPath = 'https://github.com/LOUSANPANG/fe-workflow'
+  const navList = useTheHeaderNavList()
+  const githubPath = useTheHeaderGithubPath()
 </script>

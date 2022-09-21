@@ -1,9 +1,5 @@
 <template>
-  <h1>docs</h1>
+  <div> </div>
 </template>
 
-<script setup>
-  definePageMeta({
-    layout: 'docs',
-  })
-</script>
+<script setup lang="ts"></script>
