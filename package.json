@@ -34,7 +34,7 @@
     "eslint-plugin-vue": "^9.4.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
-    "nuxt": "v3.0.0-rc.9",
+    "nuxt": "npm:nuxt3@latest",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8"
