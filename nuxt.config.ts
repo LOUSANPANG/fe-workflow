@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
-
 const isDev = process.env.npm_lifecycle_event === 'dev'
 const isPro = process.env.NODE_ENV === 'production'
 
@@ -15,7 +13,7 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/content'],
 
-  css: ['~/assets/css/tailwind.css', '~/assets/css/iconfont.css'],
+  css: ['~/assets/css/tailwind.css', '~/assets/iconfont/iconfont.css'],
 
   plugins: ['~/plugins/ant.client.ts'],
 
