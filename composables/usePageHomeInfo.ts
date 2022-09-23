@@ -1,7 +1,7 @@
 export const usePageHomeTimeline = () =>
   useState<Array<string>>('PAGEHOMETIMELINE', () => [
     '初始化项目脚手架（create init myApp）',
-    '规范项目目录（component pages store router static ...）',
+    '项目目录规范（component pages store router static ...）',
     '编码规范（eslint prettier stylelint commitlint vscode.setting）',
     '集成测试（jest vitest）',
     '性能优化（vite webpack rollup）',

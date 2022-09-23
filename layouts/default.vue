@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <TheHeader />
+  <div class="m-layout">
+    <div class="fixed z-1 left-0 top-0">
+      <TheHeader />
+    </div>
 
-    <div class="relative pt-20">
+    <div class="pt-20">
       <slot />
     </div>
   </div>

@@ -1,10 +1,10 @@
 <template>
-  <div class="beams bg-no-repeat">
+  <div class="beams pt-6">
     <div class="max-w-5xl mx-auto mb-24">
-      <h1 class="pt-8 text-slate-900 text-4xl tracking-tight text-center">
+      <h1 class="mb-6 text-slate-900 text-4xl tracking-tight text-center">
         FE Engineering Construction Guide Refspec.
       </h1>
-      <p class="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto">
+      <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto">
         This operation manual including
         <code class="font-mono font-medium text-sky-500">cli install</code>,
         <code class="font-mono font-medium text-sky-500">specification</code>,
@@ -87,11 +87,12 @@
   })
 </script>
 
-<style>
+<style scoped>
   .beams {
     background-image: url('~/assets/img/beam/hero@75.jpg');
     background-size: 120rem;
-    background-position: 0 3rem;
+    background-position: 0 1rem;
+    background-repeat: no-repeat;
   }
 
   .u-code {
