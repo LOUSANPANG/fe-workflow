@@ -13,7 +13,7 @@
 
         <!-- right layout -->
         <div class="overflow-auto right-layout w-[calc(100%-18rem)] h-full">
-          <DocsLayoutRight />
+          <NuxtPage />
         </div>
       </div>
     </div>
