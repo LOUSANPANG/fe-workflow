@@ -82,14 +82,12 @@
 
   const codeContent: Array<Array<string>> = unref(usePageHomeCode())
 
-  onMounted(() => {
-    timelineText.forEach((item, index) => {
-      ;((item, index) => {
-        setTimeout(() => {
-          timelineContent.value.push(item)
-        }, 3000 * index)
-      })(item, index)
-    })
+  timelineText.forEach((item, index) => {
+    ;((item, index) => {
+      setTimeout(() => {
+        timelineContent.value.push(item)
+      }, 3000 * index)
+    })(item, index)
   })
 </script>
 
