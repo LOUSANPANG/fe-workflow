@@ -27,14 +27,14 @@
             ></span>
             <span class="ml-6 text-rose-400">{{ websiteName }}</span>
           </div>
-          <a-timeline>
-            <a-timeline-item
+          <Timeline>
+            <TimelineItem
               class="text-slate-600"
               v-for="(item, index) in timelineContent"
               :key="index"
-              >{{ item }}</a-timeline-item
+              >{{ item }}</TimelineItem
             >
-          </a-timeline>
+          </Timeline>
         </div>
       </div>
       <!-- terminal -->
@@ -69,6 +69,10 @@
 </template>
 
 <script setup lang="ts">
+  import { Timeline } from 'ant-design-vue'
+  import 'ant-design-vue/lib/timeline/style/index.css'
+  const TimelineItem = Timeline.Item
+
   const websiteName = useWebsiteName()
 
   const timelineText: Array<string> = unref(usePageHomeTimeline())

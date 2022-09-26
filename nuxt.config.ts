@@ -15,8 +15,6 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/tailwind.css', '~/assets/iconfont/iconfont.css'],
 
-  plugins: ['~/plugins/ant.client.ts'],
-
   build: {
     postcss: {
       postcssOptions: {
