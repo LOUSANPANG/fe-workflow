@@ -7,7 +7,7 @@ type NavList = {
 export const useTheHeaderNavList = () =>
   useState<Array<NavList>>('HEADERNAVLIST', () => [
     { name: 'Home', path: '/', target: '' },
-    { name: 'Docs', path: '/docs', target: '' },
+    { name: 'Docs', path: '/docs/documentation', target: '' },
     { name: 'Blog', path: 'https://lousanpang.github.io/', target: '_blank' },
   ])
 
