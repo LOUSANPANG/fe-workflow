@@ -1,11 +1,12 @@
 const isDev = process.env.npm_lifecycle_event === 'dev'
+const baseURL = isDev ? '' : '/fe-workflow'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
-    baseURL: isDev ? '' : '/fe-workflow',
+    baseURL,
     head: {
-      link: [{ rel: 'shortcut icon', href: '/fe-workflow/favicon.ico' }],
+      link: [{ rel: 'shortcut icon', href: `${baseURL}/favicon.ico` }],
       script: [isDev && { src: 'https://cdn.tailwindcss.com' }],
     },
   },
