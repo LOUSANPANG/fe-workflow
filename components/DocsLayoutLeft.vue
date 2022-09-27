@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul>
+    <ul class="pb-20">
       <!-- earlyDev -->
       <li v-for="item in docsLayoutLeftEarlyDev" :key="item.title">
         <NuxtLink
@@ -24,7 +24,7 @@
             <NuxtLink
               :to="val.router"
               class="block border-l pl-4 -ml-px border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-900"
-              activeClass="text-sky-500 border-sky-400"
+              activeClass="!text-sky-500 border-sky-500"
               >{{ val.title }}</NuxtLink
             >
           </li>
