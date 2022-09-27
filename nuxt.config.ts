@@ -3,6 +3,11 @@ const baseURL = isDev ? '' : '/fe-workflow'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  ssr: false,
+  nitro: {
+    preset: 'service-worker',
+  },
+
   app: {
     baseURL,
     head: {
@@ -13,7 +18,14 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/content'],
 
-  css: ['~/assets/css/tailwind.css', '~/assets/iconfont/iconfont.css'],
+  content: {
+    highlight: {
+      theme: 'github-dark-dimmed',
+      preload: ['bash', 'git-commit', 'vue', 'nginx'],
+    },
+  },
+
+  css: ['~/assets/css/base.css', '~/assets/css/tailwind.css', '~/assets/iconfont/iconfont.css'],
 
   build: {
     postcss: {
