@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
-  '@nuxt/content': npm:@nuxt/content-edge@latest
+  '@nuxt/content': ^2.1.1
   '@nuxtjs/tailwindcss': ^5.3.2
   '@typescript-eslint/eslint-plugin': ^5.36.1
   '@typescript-eslint/parser': ^5.36.1
@@ -26,7 +26,7 @@ specifiers:
 devDependencies:
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
-  '@nuxt/content': /@nuxt/content-edge/2.1.1-27729314.5fc042b
+  '@nuxt/content': 2.1.1
   '@nuxtjs/tailwindcss': 5.3.2
   '@typescript-eslint/eslint-plugin': 5.36.2_iurrlxgqcgk5svigzxakafpeuu
   '@typescript-eslint/parser': 5.36.2_yqf6kl63nyoq5megxukfnom5rm
@@ -714,8 +714,8 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@nuxt/content-edge/2.1.1-27729314.5fc042b:
-    resolution: {integrity: sha512-PifcggNWKQpcGKlNsWu6uuV39V9GF1tygEoetx31pGigKolz9ddxPE4Cc8W595xoB2hhEoConhE8PUNElZF5YA==}
+  /@nuxt/content/2.1.1:
+    resolution: {integrity: sha512-yYjmPmG9FRl6/vDQNobbHZlr0LNe9cP5PJcz4WfQN/alOAQaym0NRhlhZTkMe6Qb6yVjycE5IH2zU1f+o98c6g==}
     dependencies:
       '@nuxt/kit': 3.0.0-rc.11
       consola: 2.15.3
