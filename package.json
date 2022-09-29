@@ -2,7 +2,7 @@
   "homepage": "https://lousanpang.github.io/fe-workflow",
   "scripts": {
     "build": "nuxt build",
-    "dev": "TAILWIND_MODE=watch nuxt dev",
+    "dev": "TAILWIND_MODE=watch nuxt dev --port 9000",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",

@@ -1,7 +1,6 @@
 const isDev = process.env.npm_lifecycle_event === 'dev'
 const baseURL = isDev ? '' : '/fe-workflow'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
     baseURL,
