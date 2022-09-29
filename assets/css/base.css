@@ -7,3 +7,38 @@ pre {
   border-radius: 0.75rem;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
+
+/* 行内代码块 */
+p > code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(175,184,193,0.2);
+  border-radius: 6px;
+}
+
+/* doc a 标签 */
+.doclink {
+  color: rgb(17 24 39);
+  font-weight: 700;
+  border-bottom: 1px solid rgb(125 211 252);
+}
+
+br {
+  margin-bottom: 2rem;
+}
+
+ul, ol {
+  list-style-position: inside !important;
+  padding: 1rem;
+  padding-left: 2.5rem;
+}
+ul {
+  list-style-type: disc !important;
+}
+li > ul {
+  list-style-type: circle !important;
+}
+ol {
+  list-style-type: decimal !important;
+}
