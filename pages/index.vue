@@ -1,9 +1,9 @@
 <template>
   <div class="beams pt-6">
     <div class="max-w-5xl mx-auto mb-24">
-      <h1 class="mb-6 text-slate-900 text-4xl tracking-tight text-center">
+      <p class="mb-6 text-slate-900 text-4xl tracking-tight text-center">
         FE Engineering Construction Guide Refspec.
-      </h1>
+      </p>
       <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto">
         This operation manual including
         <code class="font-mono font-medium text-sky-500">cli install</code>,
@@ -27,8 +27,8 @@
             ></span>
             <span class="ml-6 text-rose-400">{{ websiteName }}</span>
           </div>
-          <ul>
-            <li
+          <div>
+            <div
               class="relative mb-5 flex items-center text-sm text-slate-600"
               v-for="(item, index) in timelineContent"
               :key="index"
@@ -39,8 +39,8 @@
               ></div>
               <div class="mr-3 w-2.5 h-2.5 bg-white rounded-full border-2 border-blue-500"></div>
               <div class="break-word">{{ item }}</div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
       <!-- terminal -->

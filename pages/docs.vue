@@ -5,14 +5,14 @@
     </div>
 
     <div class="w-full h-screen lg:px-16 border-t">
-      <div class="w-full h-full flex box-border pt-28 lg:px-16">
+      <div class="w-full h-full flex box-border pt-28 lg:pl-16 lg:pr-10">
         <!-- left layout -->
-        <div class="overflow-auto left-layout w-[18rem] h-full">
+        <div class="overflow-auto left-layout w-[17rem] h-full">
           <DocsLayoutLeft />
         </div>
 
         <!-- right layout -->
-        <div class="overflow-auto right-layout w-[calc(100%-18rem)] h-full">
+        <div class="overflow-auto right-layout pl-4 w-[calc(100%-17rem)] h-full">
           <NuxtPage />
         </div>
       </div>
