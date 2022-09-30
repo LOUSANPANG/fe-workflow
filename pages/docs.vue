@@ -12,7 +12,7 @@
         </div>
 
         <!-- right layout -->
-        <div class="overflow-auto right-layout pl-4 w-[calc(100%-17rem)] h-full">
+        <div class="overflow-auto right-layout pl-4 pb-10 w-[calc(100%-17rem)] h-full">
           <NuxtPage />
         </div>
       </div>

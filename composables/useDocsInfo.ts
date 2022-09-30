@@ -91,6 +91,10 @@ export const useDocsLayoutLeftGuide = () =>
           title: 'Package',
           router: '/docs/package',
         },
+        {
+          title: '.Browserslistrc',
+          router: '/docs/browserslistrc',
+        },
       ],
     },
     {
@@ -107,6 +111,22 @@ export const useDocsLayoutLeftGuide = () =>
         {
           title: 'Test',
           router: '/docs/test',
+        },
+        {
+          title: 'Mock',
+          router: '/docs/mock',
+        },
+        {
+          title: 'Axios',
+          router: '/docs/axios',
+        },
+        {
+          title: 'Store',
+          router: '/docs/store',
+        },
+        {
+          title: 'Router',
+          router: '/docs/router',
         },
       ],
     },
