@@ -7,10 +7,10 @@
     @apply mb-7 text-2xl font-extrabold text-gray-900;
   }
   h2 {
-    @apply mb-6 text-xl font-bold text-gray-900;
+    @apply mb-5 text-xl font-bold text-gray-900;
   }
   h3 {
-    @apply mb-5 text-lg font-semibold text-gray-800;
+    @apply mb-4 text-lg font-semibold text-gray-800;
   }
   h4 {
     @apply my-4 text-base text-gray-600;

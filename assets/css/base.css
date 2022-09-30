@@ -29,16 +29,26 @@ br {
 }
 
 ul, ol {
+  margin-bottom: 2.3em !important;
   list-style-position: inside !important;
-  padding: 1rem !important;
-  padding-left: 2.5rem !important;
 }
 ul {
   list-style-type: disc !important;
 }
 li > ul {
   list-style-type: circle !important;
+  padding: 1rem !important;
+  padding-left: 2.5rem !important;
 }
 ol {
   list-style-type: decimal !important;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(203 213 225);
+  border-radius: 6px;
 }
