@@ -9,7 +9,7 @@ pre {
 }
 
 /* 行内代码块 */
-p > code {
+p > code, li > code {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
