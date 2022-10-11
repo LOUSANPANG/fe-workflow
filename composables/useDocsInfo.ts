@@ -54,12 +54,12 @@ export const useDocsLayoutLeftGuide = () =>
           router: '/docs/stylelint',
         },
         {
-          title: '.Vscode',
-          router: '/docs/vscode',
+          title: 'TSConfig',
+          router: '/docs/tsconfig',
         },
         {
-          title: 'TsConfig',
-          router: '/docs/tsconfig',
+          title: 'EditorConfig',
+          router: '/docs/editorconfig',
         },
       ],
     },
@@ -71,8 +71,8 @@ export const useDocsLayoutLeftGuide = () =>
           router: '/docs/husky-lintstaged',
         },
         {
-          title: 'Commitizen & Commitlint',
-          router: '/docs/commitizen-commitlint',
+          title: 'Commitlint & Commitizen',
+          router: '/docs/commitlint-commitizen',
         },
         {
           title: 'Changelog & Gitmoji',
