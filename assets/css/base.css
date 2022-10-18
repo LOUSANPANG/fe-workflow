@@ -44,6 +44,30 @@ ol {
   list-style-type: decimal !important;
 }
 
+/* 表格 */
+table {
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  border: 1px solid rgb(148 163 184);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+thead {
+  background-color: rgb(248 250 252);
+}
+tr > th {
+  text-align: left;
+  padding: 1rem;
+  color: rgb(15 23 42);
+  font-weight: 600;
+  border: 1px solid rgb(203 213 225);
+}
+tr > td {
+  padding: 1rem;
+  border: 1px solid rgb(203 213 225);
+  color: rgb(100 116 139);
+}
+
 /* 滚动条 */
 ::-webkit-scrollbar {
   display: none;

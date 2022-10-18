@@ -71,29 +71,12 @@ export const useDocsLayoutLeftGuide = () =>
           router: '/docs/husky-lintstaged',
         },
         {
-          title: 'Commitlint & Commitizen',
-          router: '/docs/commitlint-commitizen',
+          title: 'Commitizen & Commitlint',
+          router: '/docs/commitizen-commitlint',
         },
         {
-          title: 'Changelog & Gitmoji',
-          router: '/docs/changelog-gitmoji',
-        },
-      ],
-    },
-    {
-      title: '开源规范',
-      children: [
-        {
-          title: '.Github',
-          router: '/docs/github',
-        },
-        {
-          title: 'Package',
-          router: '/docs/package',
-        },
-        {
-          title: '.Browserslistrc',
-          router: '/docs/browserslistrc',
+          title: 'StandardVersion',
+          router: '/docs/standard-version',
         },
       ],
     },
@@ -101,16 +84,12 @@ export const useDocsLayoutLeftGuide = () =>
       title: '开发规范',
       children: [
         {
-          title: 'Var & Param',
-          router: '/docs/var-param',
+          title: 'Var',
+          router: '/docs/var',
         },
         {
           title: 'Notes',
           router: '/docs/notes',
-        },
-        {
-          title: 'Test',
-          router: '/docs/test',
         },
         {
           title: 'Mock',
@@ -182,6 +161,32 @@ export const useDocsLayoutLeftGuide = () =>
         {
           title: 'UserTraffic',
           router: '/docs/user-traffic',
+        },
+      ],
+    },
+    {
+      title: '开源规范',
+      children: [
+        {
+          title: '.Github',
+          router: '/docs/github',
+        },
+        {
+          title: 'Package',
+          router: '/docs/package',
+        },
+        {
+          title: '.Browserslistrc',
+          router: '/docs/browserslistrc',
+        },
+      ],
+    },
+    {
+      title: '参考链接',
+      children: [
+        {
+          title: 'link',
+          router: '/docs/link',
         },
       ],
     },
