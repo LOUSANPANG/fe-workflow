@@ -6,14 +6,15 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "lint-staged": {
-    "*.{vue,js,ts}": "eslint --fix"
+    "*.{vue,js,jsx,ts,tsx}": "eslint --fix"
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-customizable"
+      "path": "node_modules/cz-customizable"
     }
   },
   "devDependencies": {
@@ -25,6 +26,7 @@
     "@typescript-eslint/parser": "^5.36.1",
     "autoprefixer": "^10.4.8",
     "commitizen": "^4.2.5",
+    "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.9.2",
     "eslint": "^8.23.0",
@@ -32,7 +34,7 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.4.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "nuxt": "npm:nuxt3@latest",
     "postcss": "^8.4.16",
