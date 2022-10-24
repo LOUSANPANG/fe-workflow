@@ -2,8 +2,8 @@
 
 ## 环境搭建
 
-* 需要安装 [Node.js](http://nodejs.org/) 12+，以及 [yarn](https://yarnpkg.com/en/docs/install)。
-* 克隆仓库到本地后，执行 ```yarn ``` 安装开发依赖。
+* 需要安装 [Node.js](http://nodejs.org/) 14.16 or 16.11+，以及 [pnpm](https://pnpm.io/)。
+* 克隆仓库到本地后，执行 `pnpm i` 安装开发依赖。
 
 ## 开发
 
