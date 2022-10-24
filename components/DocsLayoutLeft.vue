@@ -36,6 +36,7 @@
 
 <script setup lang="ts">
   import { DocsLayoutLeftEarlyDev, DocsLayoutLeftGuide } from '~/composables/useDocsInfo'
+  import a from './a.js'
 
   const docsLayoutLeftEarlyDev: Array<DocsLayoutLeftEarlyDev> = unref(useDocsLayoutLeftEarlyDev())
   const docsLayoutLeftGuide: Array<DocsLayoutLeftGuide> = unref(useDocsLayoutLeftGuide())
