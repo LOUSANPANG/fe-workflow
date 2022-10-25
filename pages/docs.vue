@@ -24,6 +24,14 @@
   definePageMeta({
     layout: false,
   })
+
+  const route = useRoute()
+  watchEffect(() => {
+    if (process.client && route.path) {
+      const docsContainer: HTMLDivElement | null = document.querySelector('.right-layout')
+      docsContainer && docsContainer.scrollTo(0, 0)
+    }
+  })
 </script>
 
 <style scoped>
