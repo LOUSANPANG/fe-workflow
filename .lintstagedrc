@@ -2,20 +2,12 @@
   "*.vue": [
     "prettier --write .",
     "eslint  --fix",
-    "stylelint --fix",
-    "git add"
   ],
   "*.{js,jsx,ts,tsx}": [
     "prettier --write .",
-    "eslint  --fix",
-    "git add"
+    "eslint  --fix"
   ],
-  "*.md": [
-    "prettier --write",
-    "git add"
-  ],
-  "*.{htm,html,css,sss,less,scss,sass}": [
-    "stylelint --fix",
-    "git add"
-  ]
+  // "*.md": [
+  //   "prettier --write"
+  // ],
 }

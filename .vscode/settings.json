@@ -1,7 +1,7 @@
 {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "commentTranslate.targetLanguage": "zh-CN",
-    "css.lint.unknownAtRules": "ignore"
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "commentTranslate.targetLanguage": "zh-CN",
+  "css.lint.unknownAtRules": "ignore"
 }
