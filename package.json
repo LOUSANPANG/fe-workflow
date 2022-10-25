@@ -9,9 +9,6 @@
     "prepare": "husky install",
     "commit": "git-cz"
   },
-  "lint-staged": {
-    "*.{vue,js,jsx,ts,tsx}": "eslint --fix"
-  },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
@@ -28,6 +25,7 @@
     "autoprefixer": "^10.4.8",
     "commitizen": "^4.2.5",
     "commitlint-config-cz": "^0.13.3",
+    "commitlint-config-gitmoji": "^2.2.6",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.9.2",
     "eslint": "^8.23.0",

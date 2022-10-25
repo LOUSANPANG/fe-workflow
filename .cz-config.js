@@ -7,24 +7,48 @@ module.exports = {
     subject: '填写简短精炼的变更描述 :\n',
     body: '填写更加详细的变更描述（可选）。使用 "|" 换行 :\n',
     breaking: '列举非兼容性重大的变更（可选）。使用 "|" 换行 :\n',
-    footerPrefixsSelect: "选择关联issue前缀（可选）:",
-    customFooterPrefixs: "输入自定义issue前缀 :",
+    footerPrefixsSelect: '选择关联issue前缀（可选）:',
+    customFooterPrefixs: '输入自定义issue前缀 :',
     footer: '列举关联issue (可选) 例如: #31, #I3244 :\n',
     confirmCommit: '是否提交或修改commit ?',
   },
 
   types: [
-    { value: "feat", name: "feat:     ✨  新增功能", emoji: ":sparkles:" },
-    { value: "fix", name: "fix:     🐛  修复 bug", emoji: ":bug:" },
-    { value: "docs", name: "docs:     📝  文档变更", emoji: ":memo:" },
-    { value: "style", name: "style:     💄  代码格式（不影响功能，例如空格、分号等格式修正）", emoji: ":lipstick:" },
-    { value: "refactor", name: "refactor:     ♻️  代码重构（不包括 bug 修复、功能新增）", emoji: ":recycle:" },
-    { value: "perf", name: "perf:     ⚡️  性能优化", emoji: ":zap:" },
-    { value: "test", name: "test:     ✅  添加、修改测试用例", emoji: ":white_check_mark:" },
-    { value: "build", name: "build:     📦️  构建流程、外部依赖变更（如升级 npm 包、修改 webpack 配置等）", emoji: ":package:" },
-    { value: "ci", name: "ci:     👷  修改 CI 配置、脚本", emoji: ":construction_worker:" },
-    { value: "chore", name: "chore:     🔨  对构建过程或辅助工具和库的更改（不影响源文件、测试用例）", emoji: ":hammer:" },
-    { value: "revert", name: "revert:     ⏪️  回滚 commit", emoji: ":rewind:" }
+    { value: ':sparkles: feat', name: 'feat:     ✨  新增功能', emoji: ':sparkles:' },
+    { value: ':bug: fix', name: 'fix:     🐛  修复 bug', emoji: ':bug:' },
+    { value: ':memo: docs', name: 'docs:     📝  文档变更', emoji: ':memo:' },
+    {
+      value: ':lipstick: style',
+      name: 'style:     💄  代码格式（不影响功能，例如空格、分号等格式修正）',
+      emoji: ':lipstick:',
+    },
+    {
+      value: ':recycle: refactor',
+      name: 'refactor:     ♻️  代码重构（不包括 bug 修复、功能新增）',
+      emoji: ':recycle:',
+    },
+    { value: ':zap: perf', name: 'perf:     ⚡️  性能优化', emoji: ':zap:' },
+    {
+      value: ':white_check_mark: test',
+      name: 'test:     ✅  添加、修改测试用例',
+      emoji: ':white_check_mark:',
+    },
+    {
+      value: ':package: build',
+      name: 'build:     📦️  构建流程、外部依赖变更（如升级 npm 包、修改 webpack 配置等）',
+      emoji: ':package:',
+    },
+    {
+      value: ':construction_worker: ci',
+      name: 'ci:     👷  修改 CI 配置、脚本',
+      emoji: ':construction_worker:',
+    },
+    {
+      value: ':hammer: chore',
+      name: 'chore:     🔨  对构建过程或辅助工具和库的更改（不影响源文件、测试用例）',
+      emoji: ':hammer:',
+    },
+    { value: ':rewind: revert', name: 'revert:     ⏪️  回滚 commit', emoji: ':rewind:' },
   ],
 
   scopes: [
@@ -47,5 +71,5 @@ module.exports = {
   useEmoji: true,
   allowBreakingChanges: ['feat', 'fix'],
   subjectLimit: 100,
-  breaklineChar: '|'
+  breaklineChar: '|',
 }
