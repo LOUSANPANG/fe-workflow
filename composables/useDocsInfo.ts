@@ -54,12 +54,16 @@ export const useDocsLayoutLeftGuide = () =>
           router: '/docs/stylelint',
         },
         {
+          title: 'EditorConfig',
+          router: '/docs/editorconfig',
+        },
+        {
           title: 'TSConfig',
           router: '/docs/tsconfig',
         },
         {
-          title: 'EditorConfig',
-          router: '/docs/editorconfig',
+          title: 'Browserslist',
+          router: '/docs/browserslist',
         },
       ],
     },
@@ -75,8 +79,8 @@ export const useDocsLayoutLeftGuide = () =>
           router: '/docs/commitizen-commitlint',
         },
         {
-          title: 'StandardVersion',
-          router: '/docs/standard-version',
+          title: 'Changelog',
+          router: '/docs/changelog',
         },
       ],
     },
@@ -96,8 +100,8 @@ export const useDocsLayoutLeftGuide = () =>
           router: '/docs/mock',
         },
         {
-          title: 'Axios',
-          router: '/docs/axios',
+          title: 'Request',
+          router: '/docs/request',
         },
         {
           title: 'Store',
@@ -168,16 +172,12 @@ export const useDocsLayoutLeftGuide = () =>
       title: '开源规范',
       children: [
         {
-          title: '.Github',
+          title: 'Github',
           router: '/docs/github',
         },
         {
           title: 'Package',
           router: '/docs/package',
-        },
-        {
-          title: '.Browserslistrc',
-          router: '/docs/browserslistrc',
         },
       ],
     },
