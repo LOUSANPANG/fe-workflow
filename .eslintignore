@@ -10,3 +10,4 @@ dist
 .idea
 .husky
 !.eslintrc.js
+*.md
