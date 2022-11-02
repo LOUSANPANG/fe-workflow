@@ -12,14 +12,14 @@ export const useDocsLayoutLeftEarlyDev = () =>
       router: '/docs/documentation',
     },
     {
-      title: 'Design',
-      icon: 'iconfont icon-zhaopian',
-      router: '/docs/design',
-    },
-    {
       title: 'Tools',
       icon: 'iconfont icon-179',
       router: '/docs/tools',
+    },
+    {
+      title: 'Design',
+      icon: 'iconfont icon-zhaopian',
+      router: '/docs/design',
     },
   ])
 
@@ -178,15 +178,6 @@ export const useDocsLayoutLeftGuide = () =>
         {
           title: 'Package',
           router: '/docs/package',
-        },
-      ],
-    },
-    {
-      title: '参考链接',
-      children: [
-        {
-          title: 'link',
-          router: '/docs/link',
         },
       ],
     },
