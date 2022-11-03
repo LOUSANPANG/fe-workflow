@@ -4,15 +4,15 @@
 
 @layer base {
   h1 {
-    @apply mb-7 text-2xl font-extrabold text-gray-900;
+    @apply mb-16 text-2xl font-extrabold text-gray-900;
   }
   h2 {
-    @apply my-5 text-xl font-bold text-gray-900;
+    @apply mt-14 mb-10 text-xl font-bold text-gray-900;
   }
   h3 {
-    @apply my-4 text-lg font-semibold text-gray-800;
+    @apply mt-10 mb-6 text-lg font-semibold text-gray-800;
   }
   h4 {
-    @apply my-4 text-base text-gray-600;
+    @apply mt-6 mb-2 text-base text-gray-600;
   }
 }
