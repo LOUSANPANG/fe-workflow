@@ -3,7 +3,7 @@ export default defineNuxtPlugin(() => {
   // nuxtApp.vueApp.use()
   return {
     provide: {
-      AppVersion: () => 'version 0.0.1',
+      AppVersion: () => 'version 1.0.0',
     },
   }
 })
