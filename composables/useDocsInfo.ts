@@ -169,11 +169,11 @@ export const useDocsLayoutLeftGuide = () =>
       ],
     },
     {
-      title: '开源规范',
+      title: '包构建',
       children: [
         {
-          title: 'Github',
-          router: '/docs/github',
+          title: 'Build',
+          router: '/docs/build',
         },
         {
           title: 'Package',
