@@ -153,6 +153,14 @@ export const useDocsLayoutLeftGuide = () =>
           title: 'GitHubActions',
           router: '/docs/github-action',
         },
+        {
+          title: 'Nginx',
+          router: '/docs/nginx',
+        },
+        {
+          title: 'Docker',
+          router: '/docs/docker',
+        },
       ],
     },
     {
