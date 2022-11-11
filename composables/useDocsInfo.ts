@@ -114,6 +114,19 @@ export const useDocsLayoutLeftGuide = () =>
       ],
     },
     {
+      title: '便捷开发',
+      children: [
+        {
+          title: 'AutoImportant',
+          router: '/docs/auto-important',
+        },
+        {
+          title: 'IconComponent',
+          router: '/docs/icon-component',
+        },
+      ],
+    },
+    {
       title: '性能优化',
       children: [
         {
