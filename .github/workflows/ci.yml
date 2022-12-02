@@ -22,7 +22,8 @@ jobs:
           npm run generate
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: jenkey2011/vuepress-deploy@v1.8.1
+        # uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.FEWORKFLOW }}
           BRANCH: gh-pages
