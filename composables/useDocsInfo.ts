@@ -134,12 +134,20 @@ export const useDocsLayoutLeftGuide = () =>
           router: '/docs/analysis',
         },
         {
-          title: 'Code',
-          router: '/docs/code',
+          title: 'JS & CSS',
+          router: '/docs/js-css',
         },
         {
           title: 'Resource',
           router: '/docs/resource',
+        },
+        {
+          title: 'Vue',
+          router: '/docs/vue',
+        },
+        {
+          title: 'MiniProgram',
+          router: '/docs/mini-program',
         },
         {
           title: 'Webpack',
