@@ -130,8 +130,8 @@ export const useDocsLayoutLeftGuide = () =>
       title: '性能优化',
       children: [
         {
-          title: 'Analysis',
-          router: '/docs/analysis',
+          title: 'ChromeAnalysis',
+          router: '/docs/analysis-chrome',
         },
         {
           title: 'JS & CSS',
