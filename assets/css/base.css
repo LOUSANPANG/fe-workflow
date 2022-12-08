@@ -39,8 +39,10 @@ ul {
 }
 li > ul {
   list-style-type: circle !important;
-  padding: 1rem !important;
+  margin-bottom: 0 !important;
+  padding: 1rem 1rem .5rem 1rem !important;
   padding-left: 2.5rem !important;
+  color: rgba(107, 114, 128, 1);
 }
 ol {
   list-style-type: decimal !important;
