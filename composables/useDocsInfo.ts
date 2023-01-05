@@ -124,6 +124,26 @@ export const useDocsLayoutLeftGuide = () =>
           title: 'IconComponent',
           router: '/docs/icon-component',
         },
+        {
+          title: 'LayoutSystem',
+          router: '/docs/layout-system',
+        },
+        {
+          title: 'PWA',
+          router: '/docs/pwa',
+        },
+        {
+          title: 'UnoCSS',
+          router: '/docs/unocss',
+        },
+        {
+          title: 'I18n',
+          router: '/docs/i18n',
+        },
+        {
+          title: 'MarkdownSupport',
+          router: '/docs/markdown-support',
+        },
       ],
     },
     {
@@ -164,6 +184,19 @@ export const useDocsLayoutLeftGuide = () =>
       ],
     },
     {
+      title: '集成测试',
+      children: [
+        {
+          title: 'Vitest',
+          router: '/docs/vitest',
+        },
+        {
+          title: 'Cypress',
+          router: '/docs/cypress',
+        },
+      ],
+    },
+    {
       title: '项目部署',
       children: [
         {
@@ -173,6 +206,10 @@ export const useDocsLayoutLeftGuide = () =>
         {
           title: 'GitHubActions',
           router: '/docs/github-action',
+        },
+        {
+          title: 'Netlify',
+          router: '/docs/netlify',
         },
         {
           title: 'Nginx',
