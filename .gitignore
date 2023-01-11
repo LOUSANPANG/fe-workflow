@@ -3,7 +3,6 @@ dist
 .DS_Store
 .nitro
 .cache
-.npmrc
 .cache
 .nuxt
 .output
