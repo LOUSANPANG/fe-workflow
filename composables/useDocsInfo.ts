@@ -222,11 +222,11 @@ export const useDocsLayoutLeftGuide = () =>
       ],
     },
     {
-      title: '数据分析',
+      title: '监控分析',
       children: [
         {
-          title: 'ErrorLog',
-          router: '/docs/errorlog',
+          title: 'Monitor',
+          router: '/docs/monitor',
         },
         {
           title: 'UserTraffic',
