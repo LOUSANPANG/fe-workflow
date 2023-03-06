@@ -219,6 +219,10 @@ export const useDocsLayoutLeftGuide = () =>
           title: 'Docker',
           router: '/docs/docker',
         },
+        {
+          title: 'Jenkins',
+          router: '/docs/jenkins',
+        },
       ],
     },
     {
