@@ -147,6 +147,31 @@ export const useDocsLayoutLeftGuide = () =>
       ],
     },
     {
+      title: '系统构建',
+      children: [
+        {
+          title: 'Package',
+          router: '/docs/package',
+        },
+        {
+          title: 'Webpack',
+          router: '/docs/build-webpack',
+        },
+        {
+          title: 'Vite',
+          router: '/docs/build-vite',
+        },
+        {
+          title: 'Rollup',
+          router: '/docs/build-rollup',
+        },
+        {
+          title: 'Babel',
+          router: '/docs/build-babel',
+        },
+      ],
+    },
+    {
       title: '性能优化',
       children: [
         {
@@ -189,6 +214,10 @@ export const useDocsLayoutLeftGuide = () =>
         {
           title: 'Vitest',
           router: '/docs/vitest',
+        },
+        {
+          title: 'Jest',
+          router: '/docs/jest',
         },
         {
           title: 'Cypress',
@@ -235,19 +264,6 @@ export const useDocsLayoutLeftGuide = () =>
         {
           title: 'UserTraffic',
           router: '/docs/user-traffic',
-        },
-      ],
-    },
-    {
-      title: '包构建',
-      children: [
-        {
-          title: 'Build',
-          router: '/docs/build',
-        },
-        {
-          title: 'Package',
-          router: '/docs/package',
         },
       ],
     },
