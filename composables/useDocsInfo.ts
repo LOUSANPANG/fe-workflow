@@ -209,19 +209,23 @@ export const useDocsLayoutLeftGuide = () =>
       ],
     },
     {
-      title: '集成测试',
+      title: '测试',
       children: [
         {
-          title: 'Vitest',
-          router: '/docs/vitest',
+          title: '端对端测试',
+          router: '/docs/test-e2e',
         },
         {
-          title: 'Jest',
-          router: '/docs/jest',
+          title: '集成测试',
+          router: '/docs/test-integration',
         },
         {
-          title: 'Cypress',
-          router: '/docs/cypress',
+          title: '单元测试',
+          router: '/docs/test-unit',
+        },
+        {
+          title: '静态测试',
+          router: '/docs/test-static',
         },
       ],
     },
