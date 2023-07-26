@@ -82,6 +82,10 @@ export const useDocsLayoutLeftGuide = () =>
           title: 'Changelog',
           router: '/docs/changelog',
         },
+        {
+          title: 'GitSkills',
+          router: '/docs/git-skills',
+        },
       ],
     },
     {
