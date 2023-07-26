@@ -1,3 +1,5 @@
+import { defineNuxtConfig } from 'nuxt/config'
+
 const isDev = process.env.npm_lifecycle_event === 'dev'
 const baseURL = isDev ? '' : '/fe-workflow'
 
@@ -10,7 +12,7 @@ export default defineNuxtConfig({
     baseURL,
     head: {
       link: [{ rel: 'shortcut icon', href: `${baseURL}/favicon.ico` }],
-      script: [isDev && { src: 'https://cdn.tailwindcss.com' }],
+      script: isDev ? [{ src: 'https://cdn.tailwindcss.com' }] : [],
     },
   },
 
@@ -25,14 +27,10 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/base.css', '~/assets/css/tailwind.css', '~/assets/iconfont/iconfont.css'],
 
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
 })
