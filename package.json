@@ -7,7 +7,6 @@
     "preview": "npx nuxi preview",
     "postinstall": "npx nuxi prepare",
     "cleanup": "npx nuxi cleanup",
-
     "prepare": "husky install",
     "commit": "git-cz"
   },
