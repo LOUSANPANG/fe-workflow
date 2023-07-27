@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
+  experimental: {
+    payloadExtraction: false,
+  },
 
   app: {
     baseURL,
