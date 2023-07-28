@@ -6,3 +6,4 @@
 /public/*
 
 *.md
+pnpm-lock.yaml
