@@ -78,7 +78,7 @@
   const websiteName = useWebsiteName()
 
   const timelineText: Array<string> = unref(usePageHomeTimeline())
-  const timelineContent = ref([])
+  const timelineContent = ref<Array<string>>([])
 
   const codeContent: Array<Array<string>> = unref(usePageHomeCode())
 

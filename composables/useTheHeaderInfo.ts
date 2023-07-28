@@ -8,6 +8,7 @@ export const useTheHeaderNavList = () =>
   useState<Array<NavList>>('HEADERNAVLIST', () => [
     { name: 'Home', path: '/', target: '' },
     { name: 'Docs', path: '/docs/documentation', target: '' },
+    { name: 'Animation', path: 'https://lousanpang.github.io/fe-css', target: '_blank' },
     { name: 'Blog', path: 'https://lousanpang.github.io/', target: '_blank' },
   ])
 
