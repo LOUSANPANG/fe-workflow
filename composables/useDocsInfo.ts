@@ -12,11 +12,6 @@ export const useDocsLayoutLeftEarlyDev = () =>
       router: '/docs/documentation',
     },
     {
-      title: 'Tools',
-      icon: 'iconfont icon-179',
-      router: '/docs/tools',
-    },
-    {
       title: 'Design',
       icon: 'iconfont icon-zhaopian',
       router: '/docs/design',
@@ -103,51 +98,6 @@ export const useDocsLayoutLeftGuide = () =>
           title: 'Mock',
           router: '/docs/mock',
         },
-        {
-          title: 'Request',
-          router: '/docs/request',
-        },
-        {
-          title: 'Store',
-          router: '/docs/store',
-        },
-        {
-          title: 'Router',
-          router: '/docs/router',
-        },
-      ],
-    },
-    {
-      title: '便捷开发',
-      children: [
-        {
-          title: 'AutoImportant',
-          router: '/docs/auto-important',
-        },
-        {
-          title: 'IconComponent',
-          router: '/docs/icon-component',
-        },
-        {
-          title: 'LayoutSystem',
-          router: '/docs/layout-system',
-        },
-        {
-          title: 'PWA',
-          router: '/docs/pwa',
-        },
-        {
-          title: 'UnoCSS',
-          router: '/docs/unocss',
-        },
-        {
-          title: 'I18n',
-          router: '/docs/i18n',
-        },
-        {
-          title: 'MarkdownSupport',
-          router: '/docs/markdown-support',
-        },
       ],
     },
     {
@@ -180,35 +130,39 @@ export const useDocsLayoutLeftGuide = () =>
       children: [
         {
           title: 'ChromeAnalysis',
-          router: '/docs/analysis-chrome',
+          router: '/docs/opt-analysis-chrome',
         },
         {
-          title: 'JS & CSS',
-          router: '/docs/js-css',
+          title: 'CSS',
+          router: '/docs/opt-css',
+        },
+        {
+          title: 'JS',
+          router: '/docs/opt-js',
         },
         {
           title: 'Resource',
-          router: '/docs/resource',
+          router: '/docs/opt-resource',
         },
         {
           title: 'Vue',
-          router: '/docs/vue',
+          router: '/docs/opt-vue',
         },
         {
           title: 'MiniProgram',
-          router: '/docs/mini-program',
+          router: '/docs/opt-mini-program',
         },
         {
           title: 'Webpack',
-          router: '/docs/webpack',
+          router: '/docs/opt-webpack',
         },
         {
           title: 'Vite',
-          router: '/docs/vite',
+          router: '/docs/opt-vite',
         },
         {
           title: 'Network',
-          router: '/docs/network',
+          router: '/docs/opt-network',
         },
       ],
     },
