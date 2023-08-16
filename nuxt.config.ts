@@ -1,9 +1,5 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
-const isDev = process.env.npm_lifecycle_event === 'dev'
-// const baseURL = isDev ? '' : '/fe-workflow'
-const baseURL = ''
-
 export default defineNuxtConfig({
   typescript: {
     shim: false,
@@ -13,10 +9,10 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL,
+    baseURL: '/fe-workflow/',
     head: {
-      link: [{ rel: 'shortcut icon', href: `${baseURL}/favicon.ico` }],
-      script: isDev ? [{ src: 'https://cdn.tailwindcss.com' }] : [],
+      link: [{ rel: 'shortcut icon', href: `/fe-workflow/favicon.ico` }],
+      script: [],
     },
   },
 
