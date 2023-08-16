@@ -17,8 +17,9 @@ jobs:
 
       - name: Generate
         run: |
-          npm install
+          rm -rf dist
           npm run cleanup
+          npm install
           npm run build
           npm run generate
 
