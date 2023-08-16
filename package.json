@@ -1,5 +1,5 @@
 {
-  "homepage": "https://lousanpang.github.io/fe-workflow",
+  "homepage": "https://lousanpang.github.io",
   "license": "MIT",
   "scripts": {
     "build": "npx nuxi build",

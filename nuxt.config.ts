@@ -1,8 +1,8 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 const isDev = process.env.npm_lifecycle_event === 'dev'
-const baseURL = isDev ? '' : '/fe-workflow'
-console.info('process.env.npm_lifecycle_event ===>', isDev)
+// const baseURL = isDev ? '' : '/fe-workflow'
+const baseURL = ''
 
 export default defineNuxtConfig({
   typescript: {
