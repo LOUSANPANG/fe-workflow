@@ -39,4 +39,6 @@
 
   const docsLayoutLeftEarlyDev: Array<DocsLayoutLeftEarlyDev> = unref(useDocsLayoutLeftEarlyDev())
   const docsLayoutLeftGuide: Array<DocsLayoutLeftGuide> = unref(useDocsLayoutLeftGuide())
+  console.info(docsLayoutLeftEarlyDev)
+  console.info(docsLayoutLeftGuide)
 </script>
