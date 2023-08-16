@@ -13,4 +13,4 @@ export const useTheHeaderNavList = () =>
   ])
 
 export const useTheHeaderGithubPath = () =>
-  useState<string>('HEADERGITHUBPATH', () => 'https://github.com/LOUSANPANG/fe-workflow')
+  useState<string>('HEADERGITHUBPATH', () => 'https://github.com/LOUSANPANG/fe-workflow/')
