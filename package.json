@@ -1,5 +1,6 @@
 {
   "homepage": "https://lousanpang.github.io/fe-workflow",
+  "license": "MIT",
   "scripts": {
     "build": "npx nuxi build",
     "dev": "TAILWIND_MODE=watch nuxt dev --port 9000",

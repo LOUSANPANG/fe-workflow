@@ -5,6 +5,3 @@ dist
 .cache
 .nuxt
 .output
-
-# Log files
-*.log
