@@ -119,10 +119,6 @@ export const useDocsLayoutLeftGuide = () =>
           title: 'Rollup',
           router: '/docs/build-rollup',
         },
-        {
-          title: 'Babel',
-          router: '/docs/build-babel',
-        },
       ],
     },
     {
