@@ -101,6 +101,15 @@ export const useDocsLayoutLeftGuide = () =>
       ],
     },
     {
+      title: '便捷开发',
+      children: [
+        {
+          title: 'Env',
+          router: '/docs/env',
+        },
+      ],
+    },
+    {
       title: '系统构建',
       children: [
         {
