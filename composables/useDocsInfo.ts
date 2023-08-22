@@ -107,6 +107,10 @@ export const useDocsLayoutLeftGuide = () =>
           title: 'Env',
           router: '/docs/env',
         },
+        {
+          title: 'Icon',
+          router: '/docs/icon',
+        },
       ],
     },
     {
