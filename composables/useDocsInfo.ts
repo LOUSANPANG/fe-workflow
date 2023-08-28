@@ -208,8 +208,8 @@ export const useDocsLayoutLeftGuide = () =>
           router: '/docs/github-action',
         },
         {
-          title: 'Netlify',
-          router: '/docs/netlify',
+          title: '其他自动化部署',
+          router: '/docs/deploy-other',
         },
         {
           title: 'Nginx',
