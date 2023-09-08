@@ -37,6 +37,7 @@
     "eslint-plugin-vue": "^9.4.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "markdownlint-cli": "^0.36.0",
     "nuxt": "^3.6.5",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
