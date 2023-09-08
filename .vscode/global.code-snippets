@@ -1,0 +1,26 @@
+{
+  "markdown-template": {
+    "scope": "markdown",
+    "prefix": "markdown-template",
+    "description": "markdown模版",
+    "body": [
+      "---",
+      "title: ''",
+      "description: ''",
+      "---",
+      "",
+      "",
+      "## 标题二",
+      "",
+      "### 标题三",
+      "",
+      "",
+      "### 标题三",
+      "",
+      "",
+      "",
+      "## 标题二",
+      ""
+    ]
+  }
+}
