@@ -230,7 +230,7 @@ export const useDocsLayoutLeftGuide = () =>
       children: [
         {
           title: '监控埋点',
-          router: '/docs/monitor',
+          router: '/docs/buried',
         },
         {
           title: '上报可视化分析',
