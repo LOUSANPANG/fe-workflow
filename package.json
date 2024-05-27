@@ -1,0 +1,43 @@
+{
+  "name": "fe-workflow",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.12.1",
+    "@unocss/reset": "^0.60.2",
+    "nuxt": "^3.11.2",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.18.1",
+    "@iconify-json/carbon": "^1.1.33",
+    "@nuxt/eslint": "^0.3.13",
+    "@unocss/extractor-mdc": "^0.60.2",
+    "@unocss/nuxt": "^0.60.3",
+    "@unocss/transformer-directives": "^0.60.3",
+    "eslint": "^9.3.0",
+    "lint-staged": "^15.2.4",
+    "sass": "^1.77.2",
+    "simple-git-hooks": "^2.11.1",
+    "unocss": "^0.60.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

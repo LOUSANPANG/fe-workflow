@@ -1,0 +1,44 @@
+{
+  "recommendations": [
+    // themes & icons
+    "antfu.theme-vitesse",
+    "antfu.icons-carbon",
+    "file-icons.file-icons",
+    "Catppuccin.catppuccin-vsc-icons",
+
+    // essential
+    "Vue.Official",
+    "octref.vetur",
+    // "Nuxtr.nuxtr-vscode",
+    "nuxt.mdc",
+    "antfu.vite",
+    "antfu.unocss",
+    "antfu.iconify",
+    "dbaeumer.vscode-eslint",
+
+    // life savers!
+    "GitHub.copilot",
+    "github.copilot-chat",
+    "intellsmi.comment-translate",
+    "ms-ceintl.vscode-language-pack-zh-hans",
+    "eamodio.gitlens",
+    "EditorConfig.EditorConfig",
+
+    // project tool
+    "jock.svg",
+    "lokalise.i18n-ally",
+
+    // up to you
+    "antfu.file-nesting",
+    "antfu.browse-lite",
+    "ritwickdey.liveserver",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+    "wayou.vscode-todo-highlight",
+    "vincaslt.highlight-matching-tag"
+    // "naumovs.color-highlight",
+    // "WakaTime.vscode-wakatime",
+    // "github.vscode-github-actions",
+    // "GitHub.vscode-pull-request-github",
+  ]
+}
