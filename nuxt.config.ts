@@ -1,10 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  app: {
-    baseURL: '/fe-workflow/',
-  },
-
   modules: [
     '@nuxt/eslint',
     "@nuxt/content",
