@@ -1,0 +1,68 @@
+h1 {
+  --at-apply: mt-8 tracking-tight text-3xl font-extrabold text-slate-900;
+}
+h2 {
+  --at-apply: mb-2 tracking-normal whitespace-pre-wrap text-sm font-semibold text-sky-500;
+}
+h3 {
+  --at-apply: mb-4 whitespace-pre-wrap text-xl font-semibold text-slate-900;
+}
+h4 {
+  --at-apply: mb-4 whitespace-pre-wrap text-base text-slate-700;
+}
+p {
+  --at-apply: mb-4 whitespace-pre-wrap text-base text-slate-700;
+}
+
+br {
+  --at-apply: mt-1;
+}
+hr {
+  --at-apply: my-8 border-t-2 border-slate-100;
+}
+
+pre {
+  --at-apply: p-4 my-8 overflow-x-auto bg-slate-800 rounded-lg shadow-sm;
+}
+p > code,
+li > code {
+  --at-apply: m-0 px-2 py-1 text-sm font-medium text-sky-500 bg-slate-900/20 rounded-md;
+}
+
+.doclink {
+  @apply: !block !mt-1 !w-fit !text-slate-700 !font-semibold !underline !decoration-1 !underline-offset-4 !decoration-sky-500 !hover:text-sky-500;
+}
+
+ul,
+ol {
+  @apply: !mt-2 !mb-4 !list-inside !text-slate-600;
+}
+ul {
+  @apply: !list-disc;
+}
+li > ul {
+  @apply: !mb-0 !py-4 !pl-8 !pr-4 !list-disc !text-slate-500;
+}
+ol {
+  @apply: !list-decimal;
+}
+
+table {
+  @apply: !mb-8 !text-sm !border-b !border-slate-400 !border-collapse;
+}
+thead {
+  @apply: !bg-slate-50;
+}
+tr > th {
+  @apply: !p-4 !text-left !border-b !border-slate-300 !text-slate-900 !font-semibold;
+}
+tr > td {
+  @apply: !p-4 !border-b !border-slate-300 !text-slate-600;
+}
+
+::-webkit-scrollbar {
+  --at-apply: hidden;
+}
+::-webkit-scrollbar-thumb {
+  --at-apply: bg-slate-300 rounded-md;
+}

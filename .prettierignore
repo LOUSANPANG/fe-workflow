@@ -1,9 +1,0 @@
-/dist/*
-/node_modules/**
-
-**/*.sh
-
-/public/*
-
-*.md
-pnpm-lock.yaml

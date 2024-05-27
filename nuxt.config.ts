@@ -1,36 +1,41 @@
-import { defineNuxtConfig } from 'nuxt/config'
-
 export default defineNuxtConfig({
-  typescript: {
-    shim: false,
-  },
-  experimental: {
-    payloadExtraction: false,
-  },
+  devtools: { enabled: true },
 
-  app: {
-    baseURL: '/fe-workflow/',
-    head: {
-      link: [{ rel: 'shortcut icon', href: `/fe-workflow/favicon.ico` }],
-      script: [],
+  modules: [
+    '@nuxt/eslint',
+    "@nuxt/content",
+    "@unocss/nuxt"
+  ],
+
+  eslint: {
+    config: {
+      stylistic: true,
+      standalone: false
     },
   },
 
-  modules: ['@nuxt/content'],
+  routeRules: {
+    '/docs': { redirect: '/docs/documentation', prerender: false },
+  },
 
   content: {
     highlight: {
-      theme: 'github-dark-dimmed',
-      preload: ['bash', 'git-commit', 'vue', 'nginx'],
-    },
-  },
-
-  css: ['~/assets/css/base.css', '~/assets/css/tailwind.css', '~/assets/iconfont/iconfont.css'],
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
+      theme: {
+        default: 'github-dark-dimmed',
+      },
+      langs: [
+        'js',
+        'ts',
+        'vue',
+        'css',
+        'scss',
+        'sass',
+        'html',
+        'bash',
+        'md',
+        'mdc',
+        'json'
+      ]
+    }
   },
 })
