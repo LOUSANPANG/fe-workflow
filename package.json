@@ -1,12 +1,13 @@
 {
   "name": "fe-workflow",
   "type": "module",
-  "private": true,
+  "license": "MIT",
+  "homepage": "https://lousanpang.github.io/fe-workflow/",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "nuxt build --preset github_pages",
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
