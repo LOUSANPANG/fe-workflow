@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/docs': { redirect: '/docs/documentation', prerender: false },
+    '/fe-workflow//docs': { redirect: '/fe-workflow//docs/documentation', prerender: false },
   },
 
   content: {
