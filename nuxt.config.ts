@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   app: {
-    baseURL: '/fe-workflow/',
+    baseURL: process.env.NUXT_APP_BASE_URL,
   },
 
   modules: [
@@ -16,10 +16,6 @@ export default defineNuxtConfig({
       stylistic: true,
       standalone: false
     },
-  },
-
-  routeRules: {
-    '/docs': { redirect: '/docs/documentation', prerender: false },
   },
 
   content: {
