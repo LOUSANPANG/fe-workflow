@@ -12,7 +12,7 @@ export const useNavigation = () => {
     return [
       {
         text: 'Docs',
-        link: '/docs',
+        link: '/docs/documentation',
         target: '_self'
       },
       {
