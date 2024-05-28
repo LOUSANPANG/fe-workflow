@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import type { RouteType } from '~/types/navigation'
+import asideDocumentImg from '~/assets/img/aside/document.png'
+import asideDesignImg from '~/assets/img/aside/design.png'
 
 const props = defineProps<{
   title: string,
@@ -30,7 +32,7 @@ const handleClickAside = (title: string) => {
         <img
           class="box-border w-6 h-6 mr-3 rounded ring-1 ring-slate-900/5 shadow group-hover:shadow-md group-hover:ring-slate-900/10"
           :class="selectAside === item.title ? '!shadow-md !ring-slate-900/10' : ''"
-          :src="item.icon"
+          :src="item.title === 'Documentation' ? asideDocumentImg : asideDesignImg"
         >
         <div
           class="text-sm font-bold text-slate-900 group-hover:text-sky-500"
