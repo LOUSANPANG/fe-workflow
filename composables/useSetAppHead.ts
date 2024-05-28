@@ -10,7 +10,7 @@ export const useSetAppHead = () => {
     ],
     link: [
       {
-        rel: 'icon', type: 'image/x-icon', href: '/favicon.ico',
+        rel: 'icon', type: 'image/x-icon', href: `${process.env.NUXT_APP_BASE_URL}/favicon.ico`,
       },
     ]
   })
