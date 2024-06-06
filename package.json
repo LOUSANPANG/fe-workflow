@@ -1,6 +1,7 @@
 {
   "name": "fe-workflow",
   "type": "module",
+  "packageManager": "pnpm@9.1.4+sha512.9df9cf27c91715646c7d675d1c9c8e41f6fce88246f1318c1aa6a1ed1aeb3c4f032fcdf4ba63cc69c4fe6d634279176b5358727d8f2cc1e65b65f43ce2f8bfb0",
   "license": "MIT",
   "homepage": "https://lousanpang.github.io/fe-workflow/",
   "engines": {
@@ -13,7 +14,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "@nuxt/content": "^2.12.1",
@@ -30,13 +32,10 @@
     "@unocss/nuxt": "^0.60.3",
     "@unocss/transformer-directives": "^0.60.3",
     "eslint": "^9.3.0",
+    "husky": "^9.0.11",
     "lint-staged": "^15.2.4",
     "sass": "^1.77.2",
-    "simple-git-hooks": "^2.11.1",
     "unocss": "^0.60.3"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
