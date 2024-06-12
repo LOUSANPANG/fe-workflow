@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.12.1",
-    "@unocss/reset": "^0.60.2",
+    "@unocss/reset": "^0.61.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
@@ -27,15 +27,15 @@
     "@antfu/eslint-config": "^2.18.1",
     "@iconify-json/carbon": "^1.1.33",
     "@nuxt/eslint": "^0.3.13",
-    "@unocss/extractor-mdc": "^0.60.2",
-    "@unocss/nuxt": "^0.60.3",
-    "@unocss/transformer-directives": "^0.60.3",
+    "@unocss/extractor-mdc": "^0.61.0",
+    "@unocss/nuxt": "^0.61.0",
+    "@unocss/transformer-directives": "^0.61.0",
     "eslint": "^9.3.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.4",
     "nuxt": "^3.12.1",
     "sass": "^1.77.2",
-    "unocss": "^0.60.3"
+    "unocss": "^0.61.0"
   },
   "lint-staged": {
     "*": "eslint --fix"
