@@ -7,10 +7,10 @@ defineProps<{
 }>()
 
 const handleTocLink = (hashLink: string) => {
-  const bashUrl = process.env.NODE_ENV === 'production' ? '/fe-workflow' : ''
+  const bashUrl = process.env.NUXT_APP_BASE_URL || '/'
   const route = useRoute()
   const hash = useFormatHash(hashLink)
-  window.location.href = `${bashUrl}${route.path}${hash}`
+  window.location.href = `${bashUrl.slice(0, -1)}${route.path}${hash}`
 }
 </script>
 

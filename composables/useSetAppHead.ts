@@ -11,7 +11,7 @@ export const useSetAppHead = () => {
     ],
     link: [
       {
-        rel: 'icon', type: 'image/x-icon', href: `${isProduction ? '/fe-workflow' : ''}/favicon.ico`,
+        rel: 'icon', type: 'image/x-icon', href: `/fe-workflow/favicon.ico`,
       },
     ]
   })
