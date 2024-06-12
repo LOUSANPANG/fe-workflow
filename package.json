@@ -20,7 +20,6 @@
   "dependencies": {
     "@nuxt/content": "^2.12.1",
     "@unocss/reset": "^0.60.2",
-    "nuxt": "^3.11.2",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
@@ -34,6 +33,7 @@
     "eslint": "^9.3.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.4",
+    "nuxt": "^3.12.1",
     "sass": "^1.77.2",
     "unocss": "^0.60.3"
   },
