@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL,
+    baseURL: process.env.NODE_ENV === 'production' ? '/fe-workflow/' : '/',
   },
 
   modules: [
