@@ -7,7 +7,7 @@ const props = defineProps<{
 }>()
 
 const { TITLE_EN } = useAppConfig()
-const { repoGitHub, headerLinks } = useNavigation()
+const { repoGitHub, headerLinks } = useHeaderInfo()
 
 function goHome() {
   return clearError({ redirect: '/' })

@@ -1,4 +1,4 @@
-export const useNavigation = () => {
+export const useHeaderInfo = () => {
   const repoGitHub = computed(() => {
     return {
       text: 'GitHub',
