@@ -8,14 +8,17 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "nuxt build --dotenv .env.production",
-    "dev": "nuxt dev --dotenv .env.development",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "prepare": "husky",
     "postinstall": "nuxt prepare",
+    "clean": "nuxt cleanup",
+    "dev": "nuxt dev --dotenv .env.development",
+    "build": "nuxt build --dotenv .env.production",
+    "generate": "nuxt generate --dotenv .env.production",
+    "preview": "nuxt preview --dotenv .env.production",
+    "typecheck": "nuxt typecheck",
+    "upgrade": "nuxt upgrade",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/content": "^2.12.1",
@@ -30,7 +33,7 @@
     "@unocss/extractor-mdc": "^0.61.0",
     "@unocss/nuxt": "^0.61.0",
     "@unocss/transformer-directives": "^0.61.0",
-    "eslint": "^9.3.0",
+    "eslint": "^9.4.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "nuxt": "^3.12.1",
