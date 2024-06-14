@@ -1,6 +1,5 @@
 export const useSetAppHead = () => {
   const { TITLE_EN, DESCRIPTION_EN } = useAppConfig()
-  const isProduction = process.env.NODE_ENV === 'production'
 
   useHead({
     title: TITLE_EN,
@@ -11,7 +10,7 @@ export const useSetAppHead = () => {
     ],
     link: [
       {
-        rel: 'icon', type: 'image/x-icon', href: `/fe-workflow/favicon.ico`,
+        rel: 'icon', type: 'image/x-icon', href: `/favicon.ico`,
       },
     ]
   })
