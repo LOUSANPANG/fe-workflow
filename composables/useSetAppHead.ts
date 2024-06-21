@@ -12,6 +12,21 @@ export const useSetAppHead = () => {
       {
         rel: 'icon', type: 'image/x-icon', href: `/favicon.ico`,
       },
+    ],
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-L4BS2P1L41',
+        async: true,
+      },
+      {
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-L4BS2P1L41');
+        `,
+        type: 'text/javascript',
+      }
     ]
   })
 }
