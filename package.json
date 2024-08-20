@@ -8,7 +8,7 @@
   },
   "scripts": {
     "prepare": "husky",
-    "postinstall": "nuxt prepare",
+    "postinstall": "nuxt prepare && npx only-allow pnpm",
     "clean": "nuxt cleanup",
     "dev": "nuxt dev",
     "build": "nuxt build",
@@ -20,24 +20,24 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/content": "^2.13.0",
-    "@unocss/reset": "^0.61.0",
-    "vue": "^3.4.30",
-    "vue-router": "^4.4.0"
+    "@nuxt/content": "^2.13.2",
+    "@unocss/reset": "^0.62.2",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.18.1",
-    "@iconify-json/carbon": "^1.1.36",
-    "@nuxt/eslint": "^0.3.13",
-    "@unocss/extractor-mdc": "^0.61.0",
-    "@unocss/nuxt": "^0.61.0",
-    "@unocss/transformer-directives": "^0.61.0",
-    "eslint": "^9.5.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
-    "nuxt": "^3.12.2",
-    "sass": "^1.77.6",
-    "unocss": "^0.61.0"
+    "@antfu/eslint-config": "^2.26.0",
+    "@iconify-json/carbon": "^1.1.37",
+    "@nuxt/eslint": "^0.5.1",
+    "@unocss/extractor-mdc": "^0.62.2",
+    "@unocss/nuxt": "^0.62.2",
+    "@unocss/transformer-directives": "^0.62.2",
+    "eslint": "^9.9.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "nuxt": "^3.12.4",
+    "sass": "^1.77.8",
+    "unocss": "^0.62.2"
   },
   "lint-staged": {
     "*": "eslint --fix"
