@@ -33,7 +33,7 @@
     "@unocss/nuxt": "^0.62.2",
     "@unocss/transformer-directives": "^0.62.2",
     "eslint": "^9.9.0",
-    "husky": "^9.1.4",
+    "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "nuxt": "^3.12.4",
     "sass": "^1.77.8",
