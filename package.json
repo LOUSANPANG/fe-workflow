@@ -21,23 +21,23 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.13.2",
-    "@unocss/reset": "^0.62.3",
-    "vue": "^3.5.3",
-    "vue-router": "^4.4.3"
+    "@unocss/reset": "^0.62.4",
+    "vue": "^3.5.6",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.4.1",
+    "@antfu/eslint-config": "^3.6.2",
     "@iconify-json/carbon": "^1.2.1",
-    "@nuxt/eslint": "^0.5.6",
-    "@unocss/extractor-mdc": "^0.62.3",
-    "@unocss/nuxt": "^0.62.3",
-    "@unocss/transformer-directives": "^0.62.3",
+    "@nuxt/eslint": "^0.5.7",
+    "@unocss/extractor-mdc": "^0.62.4",
+    "@unocss/nuxt": "^0.62.4",
+    "@unocss/transformer-directives": "^0.62.4",
     "eslint": "^9.10.0",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-    "nuxt": "^3.13.1",
+    "nuxt": "^3.13.2",
     "sass": "^1.78.0",
-    "unocss": "^0.62.3"
+    "unocss": "^0.62.4"
   },
   "lint-staged": {
     "*": "eslint --fix"
