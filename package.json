@@ -26,7 +26,7 @@
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.7.1",
+    "@antfu/eslint-config": "^3.7.2",
     "@iconify-json/carbon": "^1.2.1",
     "@nuxt/eslint": "^0.5.7",
     "@unocss/extractor-mdc": "^0.62.4",
