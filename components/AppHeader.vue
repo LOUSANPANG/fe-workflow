@@ -104,7 +104,7 @@ function handleClickAside(title: string) {
       <Teleport to="body">
         <div v-if="showMobileNavAside" class="fixed z-200 inset-0 overflow-y-auto">
           <div class="fixed inset-0 w-screen h-screen bg-black/20 backdrop-blur-sm" @click.stop="handleMobileNavAside" />
-          <div class="relative bg-white w-80 max-w-[calc(100%-3rem)] h-screen p-6">
+          <div class="relative bg-white w-80 max-w-[calc(100%-3rem)] h-screen overflow-y-scroll p-6">
             <div class="i-carbon-close absolute z-10 top-5 right-5 w-8 h-8 flex items-center justify-center text-slate-500 cursor-pointer hover:text-sky-500" @click.stop="handleMobileNavAside" />
             <NavigationAside :asideEarlyDev="asideEarlyDev" :asideGuide="asideGuide" :title="pageTitle" @clickAside="handleClickAside" />
           </div>
