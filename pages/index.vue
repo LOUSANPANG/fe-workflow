@@ -39,7 +39,7 @@ timelineText.value.forEach((item, index) => {
 </script>
 
 <template>
-  <div class="home box-border w-full h-full pt-6">
+  <div class="relative home box-border w-full h-full pt-6 pb-6">
     <!-- title -->
     <div class="pc:mb-24 mobile:mb-12 mx-auto max-w-7xl">
       <p class="mb-6 text-slate-900 text-4xl tracking-tight text-center">
@@ -111,6 +111,10 @@ timelineText.value.forEach((item, index) => {
           </div>
         </code>
       </div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 w-full text-center text-sm text-gray-300">
+      <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2024100378号</a>
     </div>
   </div>
 </template>
