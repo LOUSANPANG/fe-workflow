@@ -19,8 +19,19 @@ function handleMobileNavHeader() {
 }
 
 // aside
+const route = useRoute()
 const navigation = inject<Ref<NavItem[]>>('navigation')
-const { asideEarlyDev, asideGuide } = useOrganizeAside(navigation as Ref<NavItem[]>)
+let asideEarlyDev = ref([])
+let asideGuide = ref([])
+watchEffect(() => {
+  if (route.fullPath !== '/') {
+    const asideData = useOrganizeAside(navigation as Ref<NavItem[]>)
+    asideEarlyDev.value = asideData.asideEarlyDev
+    asideGuide.value = asideData.asideGuide
+  }
+})
+
+
 const pageTitle = ref < string > (props.routeParamsSlug[props.routeParamsSlug.length - 1])
 const showMobileNavAside = ref < Boolean > (false)
 function handleMobileNavAside() {

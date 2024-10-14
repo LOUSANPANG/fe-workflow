@@ -16,9 +16,9 @@ export const useHeaderInfo = () => {
         target: '_self'
       },
       {
-        text: 'Lib',
-        link: 'https://lousanpang.github.io/fe-lib',
-        target: '_blank'
+        text: 'Concept',
+        link: '/concept/documentation',
+        target: '_self'
       },
       {
         text: 'Blog',
