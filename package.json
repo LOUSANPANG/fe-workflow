@@ -20,7 +20,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/content": "^2.13.2",
+    "@nuxt/content": "^2.13.4",
     "@unocss/reset": "^0.63.4",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
