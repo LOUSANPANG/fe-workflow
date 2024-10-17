@@ -1,18 +1,11 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
 
   modules: [
     '@nuxt/eslint',
-    "@nuxt/content",
-    "@unocss/nuxt"
+    '@nuxt/content',
+    '@unocss/nuxt',
   ],
-
-  eslint: {
-    config: {
-      stylistic: true,
-      standalone: false
-    },
-  },
+  devtools: { enabled: true },
 
   content: {
     highlight: {
@@ -30,10 +23,27 @@ export default defineNuxtConfig({
         'bash',
         'md',
         'mdc',
-        'json'
-      ]
-    }
+        'json',
+      ],
+    },
   },
 
   compatibilityDate: '2024-10-14',
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
+  },
+
+  eslint: {
+    config: {
+      stylistic: true,
+      standalone: false,
+    },
+  },
 })
