@@ -1,17 +1,17 @@
-import {
-  defineConfig,
-  presetUno,
-  presetIcons,
-  presetWebFonts,
-} from 'unocss'
 import extractorMdc from '@unocss/extractor-mdc'
 import transformerDirectives from '@unocss/transformer-directives'
+import {
+  defineConfig,
+  presetIcons,
+  presetUno,
+  presetWebFonts,
+} from 'unocss'
 
 export default defineConfig({
   theme: {
     breakpoints: {
-      'mobile': '320px',
-      'pc': '1280px',
+      mobile: '320px',
+      pc: '1280px',
     },
     colors: {
       primary: '#0ea5e9',
@@ -42,8 +42,8 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        'ubuntu-sans': 'Ubuntu Sans'
-      }
+        'ubuntu-sans': 'Ubuntu Sans',
+      },
     }),
   ],
 
