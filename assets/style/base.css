@@ -60,6 +60,10 @@ tr > td {
   @apply: !p-4 !border-b !border-slate-300 !text-slate-600;
 }
 
+img {
+  --at-apply: block rounded-lg mx-auto mb-8 shadow-sm;
+}
+
 ::-webkit-scrollbar {
   --at-apply: hidden;
 }
