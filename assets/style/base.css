@@ -41,10 +41,10 @@ ul {
   @apply: !list-disc;
 }
 li > ul {
-  @apply: !mb-0 !py-4 !pl-8 !pr-4 !list-disc !text-slate-500;
+  @apply: !mb-0 !py-0 !pb-2 !pl-8 !pr-4 !list-disc !text-slate-500;
 }
 ol {
-  @apply: !list-decimal;
+  @apply: !mt-1 !list-decimal;
 }
 
 table {
