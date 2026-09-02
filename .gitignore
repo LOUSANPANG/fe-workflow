@@ -22,3 +22,6 @@ logs
 # .env
 # .env.*
 # !.env.example
+
+# pnpm 本地构建审批（pnpm>=10 需要；Vercel 用 pnpm 9 且不识别该文件，勿提交）
+pnpm-workspace.yaml
