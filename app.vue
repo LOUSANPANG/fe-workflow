@@ -5,7 +5,7 @@ import '~/assets/style/base.css'
 
 useSetAppHead()
 
-const { data: navigation } = await useLazyAsyncData('navigation', () => fetchContentNavigation(), { default: () => [] })
+const { data: navigation } = await useLazyAsyncData('navigation', () => queryCollectionNavigation('content'), { default: () => [] })
 provide('navigation', navigation)
 </script>
 

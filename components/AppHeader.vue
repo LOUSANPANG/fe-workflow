@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/dist/runtime/types'
+import type { ContentNavigationItem } from '@nuxt/content'
 
 const props = defineProps<{
   isHome: boolean,
@@ -20,12 +20,12 @@ function handleMobileNavHeader() {
 
 // aside
 const route = useRoute()
-const navigation = inject<Ref<NavItem[]>>('navigation')
+const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 let asideEarlyDev = ref([])
 let asideGuide = ref([])
 watchEffect(() => {
   if (route.fullPath !== '/') {
-    const asideData = useOrganizeAside(navigation as Ref<NavItem[]>)
+    const asideData = useOrganizeAside(navigation as Ref<ContentNavigationItem[]>)
     asideEarlyDev.value = asideData.asideEarlyDev
     asideGuide.value = asideData.asideGuide
   }

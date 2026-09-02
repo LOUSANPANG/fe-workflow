@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/dist/runtime/types'
+import type { ContentNavigationItem } from '@nuxt/content'
 
 // success route
 const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+const { data: page } = await useAsyncData(route.path, () => queryCollection('content').path(route.path).first())
 if (!page.value)
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 
 // aside
-const navigation = inject<Ref<NavItem[]>>('navigation')
-const { asideEarlyDev, asideGuide } = useOrganizeAside(navigation as Ref<NavItem[]>)
+const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
+const { asideEarlyDev, asideGuide } = useOrganizeAside(navigation as Ref<ContentNavigationItem[]>)
 // toc
 const toc = page.value?.body?.toc && useToc(page.value.body.toc)
 // title
@@ -59,7 +59,7 @@ onBeforeUnmount(() => {
 
     <!-- content -->
     <div ref="refContent" class="box-border overflow-y-auto h-full pc:w-63% mobile:w-full" :class="toc?.length ? '' : '!pc:w-80%'">
-      <ContentDoc />
+      <ContentRenderer :value="page" />
     </div>
 
     <!-- toc -->

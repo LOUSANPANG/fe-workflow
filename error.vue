@@ -4,7 +4,7 @@ const is404 = props.error?.statusCode === 404
 const statusCode = `Error ${props.error?.statusCode || '404'}`
 const statusMessage = is404 ? 'Page Not Found' : (props.error?.statusMessage || 'An Error Occurred')
 
-const { data: navigation } = await useLazyAsyncData('navigation', () => fetchContentNavigation(), { default: () => [] })
+const { data: navigation } = await useLazyAsyncData('navigation', () => queryCollectionNavigation('content'), { default: () => [] })
 provide('navigation', navigation)
 
 function goHome() {

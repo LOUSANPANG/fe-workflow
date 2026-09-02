@@ -26,7 +26,7 @@ const handleClickAside = (title: string) => {
         activeClass="text-sky-500"
         v-for="(item, index) in asideEarlyDev"
         :key="index"
-        :to="item._path"
+        :to="item.path"
         @click="handleClickAside(item.title)"
       >
         <img
@@ -42,15 +42,15 @@ const handleClickAside = (title: string) => {
     </div>
 
     <!-- guide -->
-    <div class="aside_guide mb-8 last:mb-0" v-for="item in asideGuide" :key="item._path">
+    <div class="aside_guide mb-8 last:mb-0" v-for="item in asideGuide" :key="item.path">
       <div class="mb-3 text-sm font-medium text-slate-700">{{ item.title }}</div>
       <div class="border-l border-slate-200">
         <NuxtLink
           class="block group mb-2.5 last:mb-2.5 pl-3 border-l border-transparent hover:border-sky-500 text-sm text-slate-500 hover:text-sky-500"
           :class="selectAside === navItem.title ? '!text-sky-500 !border-sky-500' : ''"
           v-for="navItem in item.children"
-          :key="navItem._path"
-          :to="navItem._path"
+          :key="navItem.path"
+          :to="navItem.path"
           @click="handleClickAside(navItem.title)"
         >{{ navItem.title }}</NuxtLink>
       </div>

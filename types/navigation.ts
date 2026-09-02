@@ -1,6 +1,7 @@
 export interface RouteType {
   title: string,
-  _path: string,
+  path: string,
+  stem?: string,
   icon?: string,
   children?: RouteType[]
 }
